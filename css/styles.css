@@ -38,10 +38,10 @@ p {
   font-size: 140%;
 }
 
-#slider {
-  width: 20%;
-}
-
 #label {
   font-size: 130%;
+}
+
+.words {
+  font-size: 110%;
 }

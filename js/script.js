@@ -15,16 +15,22 @@ if (navigator.serviceWorker) {
   })
 }
 
-/**
- * This function displays an alert.
- */
-function myButtonClicked() {
-  document.getElementById("hello-world").innerHTML = "<p>Hello, World!</p>"
-}
+const randomNumber = Math.floor(Math.random() * 6) + 1;
 
 /**
  * This function updates the slider value.
  */
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
+
+    // process 
+    if (valueFromSlider == randomNumber) {
+      document.getElementById("answer").innerHTML =
+        "Ding! Ding! Ding! You got it! The answer was " + randomNumber + ". :D"
+    }
+
+     if (valueFromSlider != randomNumber) {
+       document.getElementById("answer").innerHTML =
+         "Err...not quite. Try again. :("
+    }
 }
