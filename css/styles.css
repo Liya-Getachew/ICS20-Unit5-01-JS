@@ -22,7 +22,7 @@
 }
 
 body {
-  background-color: rgb(154 211 232);
+  background-color: #ead5ec;
 }
 
 p {
@@ -33,7 +33,15 @@ p {
   padding-top: 15pt;
 }
 
-img {
-  float: right;
-  margin-right: 15px;
+#slider-value {
+  padding-bottom: 20px;
+  font-size: 140%;
+}
+
+#slider {
+  width: 20%;
+}
+
+#label {
+  font-size: 130%;
 }
