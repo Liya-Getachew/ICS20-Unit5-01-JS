@@ -15,7 +15,7 @@ if (navigator.serviceWorker) {
   })
 }
 
-const randomNumber = Math.floor(Math.random() * 6) + 1;
+const randomNumber = Math.floor(Math.random() * 6) + 1
 
 /**
  * This function updates the slider value.
@@ -23,14 +23,14 @@ const randomNumber = Math.floor(Math.random() * 6) + 1;
 function updateSliderValue(valueFromSlider) {
   document.getElementById("slider-value").innerHTML = valueFromSlider
 
-    // process 
-    if (valueFromSlider == randomNumber) {
-      document.getElementById("answer").innerHTML =
-        "Ding! Ding! Ding! You got it! The answer was " + randomNumber + ". :D"
-    }
+  // process
+  if (valueFromSlider == randomNumber) {
+    document.getElementById("answer").innerHTML =
+      "Ding! Ding! Ding! You got it! The answer was " + randomNumber + ". :D"
+  }
 
-     if (valueFromSlider != randomNumber) {
-       document.getElementById("answer").innerHTML =
-         "Err...not quite. Try again. :("
-    }
+  if (valueFromSlider != randomNumber) {
+    document.getElementById("answer").innerHTML =
+      "Err...not quite. Try again. :("
+  }
 }
