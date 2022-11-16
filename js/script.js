@@ -26,15 +26,15 @@ function updateSliderValue(valueFromSlider) {
 
 function guess() {
   const valueFromSlider = parseInt(document.getElementById("slider").value)
-  
-    // process 
-    if (valueFromSlider == randomNumber) {
-      document.getElementById("answer").innerHTML =
-        "Ding! Ding! Ding! You got it! The answer was " + randomNumber + ". :D"
-    }
-  
-    if (valueFromSlider != randomNumber) {
-       document.getElementById("answer").innerHTML =
-         "Err...not quite. Try again. :("
-    }
+
+  // process
+  if (valueFromSlider == randomNumber) {
+    document.getElementById("answer").innerHTML =
+      "Ding! Ding! Ding! You got it! The answer was " + randomNumber + ". :D"
+  }
+
+  if (valueFromSlider != randomNumber) {
+    document.getElementById("answer").innerHTML =
+      "Err...not quite. Try again. :("
+  }
 }
