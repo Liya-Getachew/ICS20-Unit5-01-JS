@@ -45,3 +45,7 @@ p {
 .words {
   font-size: 110%;
 }
+
+#answer {
+  padding-top: 15px;
+}

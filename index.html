@@ -75,7 +75,7 @@
             id="slider"
             class="mdl-slider mdl-js-slider"
             type="range"
-            min="0"
+            min="1"
             max="6"
             value="1"
             tabindex="0"
@@ -83,6 +83,12 @@
           />
         </label>
         <div id="slider-value">___</div>
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored"
+          onclick="guess()"
+        >
+          calculate!
+        </button>
         <div id="answer" class="words"></div>
       </main>
     </div>
